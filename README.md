@@ -1,4 +1,4 @@
-genetic-memorial
+Ben Shope
 ================
 
-Genetic Memorial App Engine
+My website/blog (AngularJS served from App Engine)
