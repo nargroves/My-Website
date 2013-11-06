@@ -14,7 +14,7 @@ class Mail_Handler(webapp2.RequestHandler):
         sender = to = 'nimajnebs@gmail.com'
         subject = 'Contact Form Message'
 
-        message = '{0} {1} {2}'.format(
+        message = 'Name: {0}\nEmail: {1}\nMessage: {2}'.format(
           body.get('name'),
           body.get('email'),
           body.get('message'))
