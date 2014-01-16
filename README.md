@@ -1,4 +1,3 @@
-Ben Shope
-================
+# Senior Spring
 
-My website/blog (AngularJS served from App Engine)
+Design and consulting company website.
