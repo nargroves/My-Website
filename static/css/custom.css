@@ -158,6 +158,15 @@ width: 100%;
   -webkit-transition: margin .2s ease-in-out;
   -moz-transition: margin .2s ease-in-out;
   transition: margin .2s ease-in-out; }
+#topnav li:first-child {
+opacity:0;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.sticky #topnav li:first-child {
+  opacity:1;
+}
 
 
 @media (max-width: 767px) {
@@ -174,6 +183,9 @@ margin-right: auto;
   width:100%;
   margin-top:-22px !important;
   margin-bottom:-12px !important;
+}
+#topnav li:first-child {
+  display:none;
 }
 }
 
