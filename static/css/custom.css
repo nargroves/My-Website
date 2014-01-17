@@ -120,9 +120,10 @@ width: 100%;
 .navbar {
   padding: 10px 0px 10px 0px; position:fixed !important;}
 .navbar.navbar-inverse {
-  background: rgba(0, 0, 0, 0.1);
-  /*background: rgba(0, 0, 0, 0); */
-border-bottom: 1px solid #585858;}
+  /*background: rgba(0, 0, 0, 0.1);*/
+  background: rgba(0, 0, 0, 0); 
+/*border-bottom: 1px solid #585858;*/
+}
 .navbar.navbar-inverse.navbar-static-top {
   background-color: #252528; }
 .navbar.navbar-inverse.navbar-static-top .container {
@@ -181,7 +182,7 @@ margin-right: auto;
 
 /* header-description */
 .header-description {
-  margin: 130px 0 80px;
+  margin: 250px 0 45px;
   text-align: center;
 }
 .header-description h2 {  
@@ -195,7 +196,7 @@ margin-right: auto;
 /* header button - call to action button */
 .header-btn {
   color: #fff;
-  margin-top: 130px;
+  margin-top: 10px;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 300;
@@ -606,14 +607,14 @@ ul.social li:nth-child(6):before{
     padding-right: 20px;
   }
   .header-description {
-    margin: 76px 0 80px;
+    margin: 150px 0 20px;
   }
   .header-description h2 {
     font-size: 66px;
     line-height: 58px;
   }
   .header-btn {
-    margin-top: 74px;
+    margin-top: 20px;
   }
   .header-features {
     margin: 0 0 30px 0;
