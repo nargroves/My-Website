@@ -59,6 +59,7 @@ $(document).ready(function() {
   
   // ajax contact form
   $('#contact-form').submit(function(){
+      $('#contact-form button').html('Sending...')
       $.post('mail', $(this).serialize(), function(data) {
         $('#contact-form').html(data);
         $('#contact-form input, #contact-form textarea').val('');
