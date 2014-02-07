@@ -53,7 +53,7 @@ if(window.google && window.google.maps){
       this.polygons = [];
       this.infoWindow = null;
       this.overlay_el = null;
-      this.zoom = options.zoom || 10;
+      this.zoom = options.zoom || 11;
       this.registered_events = {};
 
       var markerClusterer = options.markerClusterer;

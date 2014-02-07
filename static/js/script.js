@@ -1,12 +1,31 @@
-/*
- * All the plugins init are in this file
- **/
+
+
+// SCROLLING
+$(function() {
+  $('#topnav a, .site-title').on('click', function(e) {
+    e.preventDefault();
+    var scrolldiv = $(this).attr('href');
+    $(scrolldiv).animatescroll({ padding:50 });
+  });
+});
+
+$(window).scroll(function() {
+if ($(".navbar").offset().top > 30) {
+    $(".navbar-fixed-top").addClass("sticky");
+}
+else {
+    $(".navbar-fixed-top").removeClass("sticky");
+  }
+});
+
+
+// PLUGINS
 var map;
 $(document).ready(function() {
   
   // activate the second carousel
-  $('#slider-carousel').carousel();
-  $('#testimonials-carousel').carousel();
+  $('#slider-carousel').carousel({ interval: false });
+  $('#testimonials-carousel').carousel({ interval: false });
   
   // init the google map plugin
   map = new GMaps({
@@ -67,3 +86,13 @@ $(document).ready(function() {
       return false;
   });
 });
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-17852816-3', 'benshope.com');
+ga('send', 'pageview');
+

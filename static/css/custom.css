@@ -296,6 +296,8 @@ opacity:0;
   padding: 20px 10px;
 }
 
+.feature > i { margin-top: 6px; }
+
 
 /*************************************************************
                         section#about
