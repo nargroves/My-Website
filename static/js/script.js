@@ -72,7 +72,7 @@ $(document).ready(function() {
       $(this).removeClass('closes').addClass('open');
     } else {
       $('.contact-form-inner').slideUp();
-       $(this).removeClass('open').addClass('closes');
+       $(this).removeClass('closes').addClass('open');
     }
   });
   
