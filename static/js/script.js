@@ -46,7 +46,7 @@ $(document).ready(function() {
     }]
   });
 
-  // sliding contact form
+  // sliding form
   $('.contact-form-btn').click( function(){
     if($(this).hasClass('closes')) {
       $('.contact-form-inner').slideDown();
@@ -59,22 +59,10 @@ $(document).ready(function() {
   
   // ajax contact form
   $('#contact-form').submit(function(){
-    $.post('contact-form.php', $(this).serialize(), function(data){
-      $('#contact-form').html(data);
-      $('#contact-form input, #contact-form textarea').val('');
-    });				
-    return false;
+      $.post('mail', $(this).serialize(), function(data) {
+        $('#contact-form').html(data);
+        $('#contact-form input, #contact-form textarea').val('');
+      });
+      return false;
   });
-
-  // ajax subscription
-  $('#subsc-form').submit(function(){
-    $.post('subscription.php', $(this).serialize(), function(data){
-    
-      $('.subscribe-wrapper > *').fadeIn();
-      $('.subscribe-wrapper').html(data);
-      $('#subsc-form input').val('');
-    });				
-    return false;
-  });
-
 });
