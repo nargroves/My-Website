@@ -65,16 +65,6 @@ $(document).ready(function() {
     }]
   });
 
-  // sliding form
-  $('.contact-form-btn').click( function(){
-    if($(this).hasClass('closes')) {
-      $('.contact-form-inner').slideDown();
-      $(this).removeClass('closes').addClass('open');
-    } else {
-      $('.contact-form-inner').slideUp();
-       $(this).removeClass('closes').addClass('open');
-    }
-  });
   
   // ajax contact form
   $('#contact-form').submit(function(){
