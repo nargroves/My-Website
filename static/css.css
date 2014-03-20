@@ -96,11 +96,8 @@ width: 100%;
 }
 
 .site-title {
-  /*margin-top: 6px;*/
-  /*color: #fff;*/
   font-weight: 400;
   font-size: 30px;
-  /*font-weight: 400;*/
   display: inline-block;
   margin:5px 0 0px 0;
 }
@@ -148,17 +145,13 @@ width: 100%;
     .header h1 { margin-top: -18px; }
     .header-description { margin-top: 120px !important; }
     .navbar { padding: 0px; }
-    .site-title { width: 100%; /*margin: 7px 0 -7px 0;*/ text-align: center; text-transform: uppercase; }
+    .site-title { width: 100%; text-align: center; }
     .site-title i { display: none; }
     #topnav { margin-top: -15px; }
     #topnav li:first-child { display:none; }
-
     .user li a { padding: 10px 15px !important; border: none !important; }
     .user li a:hover, .user li a:focus { background: none !important; }
 }
-
-
-
 
 
 
