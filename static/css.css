@@ -9,6 +9,8 @@ body {
   font-size: 15px;
   font-weight: 300;
   color: rgb(124, 124, 124);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -90,11 +92,11 @@ width: 100%;
   -moz-transition: all .2s linear;
   transition: all .2s linear;
   color: white;
+  font-size:14px;
   padding: 10px 0px 12px 0px; 
   position:fixed !important; 
   background: rgba(0, 0, 0, 0);
 }
-
 .site-title {
   font-weight: 400;
   font-size: 30px;
@@ -117,7 +119,6 @@ width: 100%;
   background: #fff !important;
   color: rgb(219, 82, 47) !important;
 }
-
 .nav > li > a {
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -137,8 +138,14 @@ width: 100%;
 .sticky #topnav li:first-child { opacity: 1; }
 
 @media (max-width: 650px) {
+    .navbar {
+      background: rgba(0, 0, 0, 0.3);
+    }
+    .navbar.sticky {
+      background: rgba(0, 0, 0, 0.8);
+    }
     .header {
-    width: 246px;
+    width: 238px;
     margin-left: auto;
     margin-right: auto;
     }
@@ -149,10 +156,9 @@ width: 100%;
     .site-title i { display: none; }
     #topnav { margin-top: -15px; }
     #topnav li:first-child { display:none; }
-    .user li a { padding: 10px 15px !important; border: none !important; }
+    .user li a { padding: 10px 14px !important; border: none !important; }
     .user li a:hover, .user li a:focus { background: none !important; }
 }
-
 
 
 
