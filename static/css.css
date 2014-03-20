@@ -1,16 +1,4 @@
-/*
- * Beaker - Responsive Landing Page - V.1.0
- * Author: Shy Design
- * Author URL: http://wrapbootstrap.com/user/shydesign
- * All Right Reserved
- * Credits:
- * * http://twitter.github.com/bootstrap/
- * * http://fortawesome.github.com/Font-Awesome/
- **/
- 
-/*************************************************************
-                         google font
-**************************************************************/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 /*************************************************************
@@ -96,7 +84,6 @@ width: 100%;
 
 /* Navbar
 -------------------------------------------------- */
-/* logo  */
 
 .navbar {
   -webkit-transition: all .2s linear;
@@ -105,9 +92,6 @@ width: 100%;
   color: white;
   padding: 10px 0px 12px 0px; 
   position:fixed !important; 
-  /*border-bottom: 2px solid #db522f;*/
-  /*border-bottom: 2px solid rgba(0, 0, 0, 0.2); */
-  border-bottom:none;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -115,19 +99,18 @@ width: 100%;
   /*margin-top: 6px;*/
   /*color: #fff;*/
   font-weight: 400;
-  font-size: 26px;
+  font-size: 30px;
   /*font-weight: 400;*/
   display: inline-block;
   margin:5px 0 0px 0;
 }
+#topnav { margin-top: 6px; }
 
 .user li a {
-  /*font-size: 14px;*/
   padding: 14.5px 15px !important;
   border: 2px solid #fff;
   display: inline-block;
   color: white !important;
-  
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   border-radius: 9px;
@@ -153,26 +136,24 @@ width: 100%;
 
 .navbar.sticky {
   background: rgba(0, 0, 0, 0.6);
-  /*background: rgba(255, 255, 255, 0.6);*/
-  /*color:black;*/
-  /*border-bottom: 2px solid black; */
 }
 .sticky #topnav li:first-child { opacity: 1; }
-/*.sticky #topnav > li > a { border: 2px solid rgba(0, 0, 0, 0.2); }*/
 
 @media (max-width: 650px) {
     .header {
-    width: 260px;
+    width: 246px;
     margin-left: auto;
     margin-right: auto;
     }
+    .header h1 { margin-top: -18px; }
     .header-description { margin-top: 120px !important; }
     .navbar { padding: 0px; }
-    .site-title { width: 100%; margin: 7px 0 -7px 0; text-align: center; text-transform: uppercase; }
-    .site-title img { display: none; }
+    .site-title { width: 100%; /*margin: 7px 0 -7px 0;*/ text-align: center; text-transform: uppercase; }
+    .site-title i { display: none; }
+    #topnav { margin-top: -15px; }
     #topnav li:first-child { display:none; }
 
-    .user li a { border: none !important; }
+    .user li a { padding: 10px 15px !important; border: none !important; }
     .user li a:hover, .user li a:focus { background: none !important; }
 }
 
@@ -181,51 +162,6 @@ width: 100%;
 
 
 
-
-
-@media (max-width: 767px) {
-  .header {
-  width: 262px;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  .site-title i {
-    display:none;
-  }
-  .site-title {
-    text-align:center;
-    width:100%;
-    margin-top:-22px !important;
-    margin-bottom:-12px !important;
-  }
-  #topnav li:first-child {
-    display:none;
-  }
-  .navbar {
-    padding: 10px 0px 0px 0px !important; 
-   }
-  .navbar.navbar-inverse .nav > li > a {
-    padding: 10px 15px 10px;
-  }
-  .user li a {
-    margin: 5px 0px 5px 0px !important;
-    /*border: none;*/
-  }
-
-  .sticky .user li a {
-    border: none;
-    margin: 3px 2px 7px 2px !important;
-    padding: 8px 15px !important;
-  }
-
-  .user li a:hover {
-  background: none !important;
-}
-  /*.user li a:hover {
-    background: #fff !important;
-    color: rgb(219, 82, 47) !important;
-  }*/
-}
 
 /* header-description */
 .header-description {
