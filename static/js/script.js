@@ -1,5 +1,4 @@
 
-
 // SCROLLING
 $(function() {
   $('#topnav a, .site-title').on('click', function(e) {
@@ -83,6 +82,6 @@ $(document).ready(function() {
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-17852816-3', 'benshope.com');
+ga('create', 'UA-17852816-3', 'argrov.es');
 ga('send', 'pageview');
 
